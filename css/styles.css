@@ -6,6 +6,7 @@
   --orange-hover: #ffab6a;
   --light-bg: #f6f8fd;
   --black: #1d2026;
+  --divider-bg: #e4e9f2;
 }
 
 
@@ -112,10 +113,133 @@ select:-webkit-autofill:focus {
 }
 
 
+/* LOGO */
+.logo {
+  display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo-img {
+  display: block;
+  width: 137px;
+  height: 20px;object-fit: contain;
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
+
+
+/* SITENAV */
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav__item {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 45px;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.sitenav__link {
+  display: block;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.sitenav__link:hover {
+  color: var(--black);
+}
+
+.sitenav__link:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--orange);
+  content: "";
+}
+
+
+/* SITE-HEADER */
+.site-header {
+
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--divider-bg);
+}
+
+.site-header__logo {
+  flex-shrink: 0;
+  margin-right: 56px;
+}
+
+.site-header__sitenav {
+  margin-right: auto;
+}
+
+/* SHOPPING-CART */
+.site-header__shopping-cart {
+
+}
+
+.site-header__cart-link {
+  position: relative;
+  display: flex;
+  color: var(--text-color);
+}
+
+.site-header__cart-link:hover {
+  color: var(--black);
+}
+
+.site-header__cart-link:active {
+  opacity: 0.6;
+}
+
+.site-header__cart-product-count {
+  position: absolute;
+  left: calc(100% - 13px);
+  top: -6px;
+  padding: 1px 6px;
+  border-radius: 7px;
+  font-size: 10px;
+  line-height: normal;
+  font-weight: bold;
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.site-header_cart-img {
+  width: 22px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
