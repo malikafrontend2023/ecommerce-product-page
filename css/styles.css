@@ -192,6 +192,57 @@ select:-webkit-autofill:focus {
   margin-bottom: 16px;
 }
 
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--orange);
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button--block {
+  display: flex;
+  width: 100%;
+}
+
+.button--wide {
+  min-width: 272px;
+}
+
+.button:hover {
+  background-color: var(--orange-hover);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.button__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 20px 18px;
+}
+
+.button__prepend {
+  margin-right: 16px;
+}
+
+.button__text {
+}
+
 /* ITEM-SHOPPING-CART-PRODUCTS*/
 .item-shopping-cart-products {
   display: flex;
@@ -223,6 +274,7 @@ select:-webkit-autofill:focus {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  text-transform: capitalize;
 }
 
 .item-shopping-cart-products__subtotal {
