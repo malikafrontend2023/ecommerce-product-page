@@ -350,7 +350,6 @@ select:-webkit-autofill:focus {
 
 /* SITE-HEADER */
 .site-header {
-
 }
 
 .site-header__container {
@@ -425,6 +424,10 @@ select:-webkit-autofill:focus {
   border: 2px solid transparent;
 }
 
+.site-header__profile-link:active {
+  opacity: 0.6;
+}
+
 .site-header__profile-link:hover {
   border-color: var(--orange);
 }
@@ -436,6 +439,11 @@ select:-webkit-autofill:focus {
 }
 
 .site-header__cart-modal {
+  display: none;
+}
+
+.site-header__cart-modal--open {
+  display: block;
   position: absolute;
   top: 94px;
   right: -76px;
